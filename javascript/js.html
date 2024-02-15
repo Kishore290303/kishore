@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hlo">hello</h1>
+
+    Num1 :<input type="number" id="input1">
+    Num2 :<input type="number" id="input2">
+    <button type="button" onclick="add()">+</button>
+    <button type="button" onclick=sub()>-</button>
+    <button type="button" onclick="multi()">*</button>
+    <button type="button" onclick="div()">/</button>
+    <button type="button" onclick="modul()">%</button>
+
+    <script>
+          function add(){
+            var a= Number(document.getElementById("input1").value);
+            var b= Number(document.getElementById("input2").value);
+            var c=a+b
+            document.getElementById("hlo").innerHTML=c
+        }
+      
+        function sub(){
+            var a= Number(document.getElementById("input1").value);
+            var b= Number(document.getElementById("input2").value);
+            var d=a-b
+            document.getElementById("hlo").innerHTML=d
+            
+
+        }
+        function multi(){
+            var a= Number(document.getElementById("input1").value);
+            var b= Number(document.getElementById("input2").value);
+            var e=a*b
+            document.getElementById("hlo").innerHTML=e
+            
+
+        }  
+        function div(){
+            var a= Number(document.getElementById("input1").value);
+            var b= Number(document.getElementById("input2").value);
+            var f=a/b
+            document.getElementById("hlo").innerHTML=f
+        }
+        function modul(){
+            var a= Number(document.getElementById("input1").value);
+            var b= Number(document.getElementById("input2").value);
+            var g=a%b
+            document.getElementById("hlo").innerHTML=g
+            
+
+        }
+    </script>
+
+    
+</body>
+</html>
