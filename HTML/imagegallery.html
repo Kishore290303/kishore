@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<style>
+   div{
+        text-align: center;
+        padding: 15px;
+    }
+    div.gallery {
+        margin: 30px;
+        border: 5px solid black;
+        float: left;
+        width: 200px;
+    }
+    div.gallery:hover{
+        border:5px double blue;
+    }
+    #home{
+        width: 100px;
+        height: 100px;
+        background: url(img_navsprites.gif) 0 0;
+      
+    }
+    #next{
+        width: 100px;
+        height: 100px;
+        background: url(img_navsprites.gif) 0 0;
+    }
+
+    input[type=text] {
+        cursor: pointer;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('search.png');
+        background-size:25px ;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+      }
+
+      body {
+        counter-reset: section;
+      }
+      
+      h2::before {
+        counter-increment: section;
+        content: "Section " counter(section) ": ";
+      }
+</style>
+<body>
+    <div class="gallery">
+        <a  href="cssimg.png">
+          <img src="cssimg.png" width="200" height="100">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a  href="cssimg.png">
+          <img src="cssimg.png"  width="200" height="100">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a  href="cssimg.png">
+          <img src="cssimg.png"  width="200" height="100">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a  href="cssimg.png">
+          <img src="cssimg.png"  width="200" height="100">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+    
+      <img id="home" src="home.jpg" alt="image">
+      <img id="next" src="next.jpg" alt="next">
+
+      <form>
+        <input type="text" name="search" placeholder="Search..">
+      </form>
+      
+
+
+      <h1>Using CSS Counters</h1>
+
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>JavaScript Tutorial</h2>
+<h2>Python Tutorial</h2>
+<h2>SQL Tutorial</h2>
+</body>
+</html>
