@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>switch</title>
+  </head>
+  <body>
+    <h1>switch</h1>
+    <h1 id="12"> hiii</h1>
+     <!-- word=<input type="word" id="word1"> 
+    <button type="button" onclick="demo()">click</button>  -->
+
+    <script>
+      function demo(){
+      let ar=prompt("enter the word")
+      switch(ar){
+        case 'a':
+        word="Vowels";
+          break;
+
+        case 'e':
+        word="Vowels";
+          break;
+
+        case 'i':
+        word="Vowels";
+          break;
+
+        case 'o':
+        word="Vowels";
+          break;
+
+        case 'u':
+          word="Vowels";
+          break;
+
+        default:
+          word="consonants"
+      }
+
+      document.getElementById ("12") .innerHTML=word;
+    }
+    demo()
+    </script>
+  </body>
+</html>
