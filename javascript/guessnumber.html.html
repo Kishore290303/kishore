@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+<body>
+
+    <h1 id="res">hiii</h1>
+    <input type="text" id="input1">
+    <button type="button" onclick="kk()">click</button>
+    <h2 id="hh">hiii</h2>
+    
+
+    <script>
+        function kk(){
+            var a=Number(document.getElementById("input1").value)
+            var guess=Math.floor(Math.random()*10)+1;
+            
+            document.getElementById("res").innerHTML=guess;
+
+
+            if (a==guess){
+           
+            document.getElementById("hh").innerHTML="winner";
+
+            }
+          
+
+        else if (a!==guess) {
+            document.getElementById("hh").innerHTML="looser";
+        }
+    }
+
+    kk()
+    </script>
+</body>
+</html>
